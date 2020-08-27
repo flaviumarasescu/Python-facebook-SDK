@@ -3,14 +3,6 @@ import facebook
 token = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 
-fb = facebook.GraphAPI(access_token=token)
-
-conn = fb.get_connections(id='102348491598424', connection_name='feed')
-
-fb.put_object(conn['102348491598424'], connection_name='feed',
-             message='.')
-
-
 # Postare pe pagina in numele paginii
 #fb.put_object(parent_object='me', connection_name='feed', message='hello')
 #fb.put_photo(image=open('postare.jpg', 'rb'), message='photo!')
